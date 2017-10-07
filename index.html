@@ -156,32 +156,18 @@
 </nav>
 <br/><br/><br/>
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
-  test</div><div class="row text-center">
-      <div class="col-sm-4">
-        <div class="thumbnail">
-          <img src="paris.jpg" alt="Paris" width="400" height="300">
-          <p><strong>Paris</strong></p>
-          <p>Fri. 27 November 2015</p>
-          <button class="btn">Buy Tickets</button>
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="thumbnail">
-          <img src="newyork.jpg" alt="New York" width="400" height="300">
-          <p><strong>New York</strong></p>
-          <p>Sat. 28 November 2015</p>
-          <button class="btn">Buy Tickets</button>
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="thumbnail">
-          <img src="sanfran.jpg" alt="San Francisco" width="400" height="300">
-          <p><strong>San Francisco</strong></p>
-          <p>Sun. 29 November 2015</p>
-          <button class="btn">Buy Tickets</button>
-        </div>
-      </div>
+  test<form role="form">
+    <div class="form-group">
+        <input id="searchinput" class="form-control" type="search" placeholder="Search..." />
     </div>
+    <div id="searchlist" class="list-group">
+        <a class="list-group-item" href="blue.html"><span>blue</span></a>
+        ...
+    </div>
+</form>
+<script>
+    $('#searchlist').btsListFilter('#searchinput', {itemChild: 'span'});
+</script> 
   </div>
 </body>
 </html>
