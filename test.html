@@ -19,3 +19,11 @@
   <h4 id="list-item-4">Item 4</h4>
   <p>...</p>
 </div>
+$('body').scrollspy({ target: '#navbar-example' })
+
+$('[data-spy="scroll"]').each(function () {
+  var $spy = $(this).scrollspy('refresh')
+})
+$('[data-spy="scroll"]').on('activate.bs.scrollspy', function () {
+  // do something…
+})
